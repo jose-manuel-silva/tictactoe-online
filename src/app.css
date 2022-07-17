@@ -1,0 +1,92 @@
+:root {
+	--background-color: #d5f5ff;
+}
+
+html {
+	background-color: var(--background-color);
+}
+
+body {
+	font-family: sans-serif;
+}
+
+.bigbutton {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 0.5em;
+	border: 1px solid #000;
+	border-radius: 0.5em;
+	background-color: #fff;
+	color: #000;
+	cursor: pointer;
+	min-width: 300px;
+	text-decoration: none;
+}
+
+a.bigbutton {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.bigbutton:hover {
+	background-color: rgb(181, 189, 255);
+	color: #fff;
+}
+
+.smallbutton {
+	font-size: 0.8em;
+	padding: 0.5em;
+	border: 1px solid #000;
+	border-radius: 0.5em;
+	background-color: #fff;
+	color: #000;
+	cursor: pointer;
+	min-width: 100px;
+}
+
+.smallbutton:hover {
+	background-color: rgb(181, 189, 255);
+	color: #fff;
+}
+
+input {
+	font-size: 1em;
+	padding: 0.5em;
+	border: 1px solid #000;
+	border-radius: 0.5em;
+	background-color: #fff;
+	color: #000;
+	min-width: 300px;
+}
+
+.cross {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	opacity: 1;
+}
+
+.cross:before,
+.cross:after {
+	position: absolute;
+	content: ' ';
+	height: 50px;
+	width: 2px;
+	border-radius: 2px;
+	background-color: black;
+	margin-left: 25px;
+}
+.cross:before {
+	transform: rotate(45deg);
+}
+.cross:after {
+	transform: rotate(-45deg);
+}
+
+.circle {
+	/* 46 because of the border */
+	width: 46px;
+	height: 46px;
+	border: #000 solid 2px;
+	border-radius: 50%;
+}
