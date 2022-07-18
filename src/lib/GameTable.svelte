@@ -17,12 +17,9 @@
 		positions[coordinates[0]][coordinates[1]] = this_player;
 		positions = positions;
 
-		updateGame(gameID, positions, current_player_playing);
-	}
+		current_player_playing = current_player_playing === 1 ? 2 : 1;
 
-	function getElement(coordinates) {
-		console.log(coordinates, positions[coordinates[0]][coordinates[1]]);
-		return positions[coordinates[0]][coordinates[1]];
+		updateGame(gameID, positions, current_player_playing);
 	}
 </script>
 
